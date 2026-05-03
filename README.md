@@ -1,20 +1,16 @@
 # Retail Sales Performance & KPI Dashboard (Power BI)
 
-##  Project Overview
-This project focuses on transforming raw retail transaction data into a **Sales Performance and KPI Dashboard** that supports data‑driven business decisions.
+## 📌 Project Overview
+This project focuses on cleaning, preparing, and analyzing retail sales transaction data to build a **Sales Performance and KPI Dashboard** using Power BI.
 
-The goal is to help retail stakeholders quickly understand:
-- Revenue performance
-- Customer behavior
-- Product and category trends
-- Sales growth over time
+The objective is to transform raw transactional data into meaningful insights that help businesses understand revenue trends, customer behavior, and overall sales performance.
 
 ---
 
-## Dataset Description
-The dataset contains **100,000+ retail transactions** covering the period 2024–2025.
+## 📊 Dataset Description
+The dataset contains **120,000 retail transactions** covering sales activities across multiple regions, product categories, and sales channels.
 
-### Key data fields include:
+### Key fields include:
 - **Transaction data:** transaction_id, transaction_date
 - **Customer data:** customer_id, customer_gender, customer_age_group, customer_segment
 - **Product data:** product_id, product_name, category, brand
@@ -25,57 +21,57 @@ Each row represents a single completed sales transaction.
 
 ---
 
-## Project Objectives
-- Track overall **sales revenue and performance**
-- Identify **top‑performing products and categories**
-- Analyze **customer segments** (New, Returning, Loyal, VIP)
-- Compare sales across **regions and channels**
-- Identify **monthly and yearly sales trends**
+## 🎯 Project Objectives
+- Analyze overall **sales revenue and performance**
+- Identify **top-performing products and categories**
+- Understand **customer segments** and purchasing behavior
+- Compare performance across **regions and sales channels**
+- Analyze **monthly and yearly sales trends**
 
 ---
 
-##  Data Cleaning & Preparation
-Before analysis, the raw dataset was cleaned to ensure accuracy and consistency:
+## 🧹 Data Cleaning & Preparation
+Before analysis, the dataset was thoroughly cleaned and prepared using Python (Pandas):
 
+- Verified that there are **no missing values**
 - Converted `transaction_date` to datetime format
-- Ensured numeric fields were stored correctly
-- Removed duplicate transactions
-- Handled missing and invalid values
-- Created time‑based features (year, month)
+- Ensured numeric columns have correct data types
+- Created time‑based features (year, month, year_month)
+- Preserved raw data and exported a cleaned dataset
 
-Raw data is preserved in `data/raw`, and cleaned data is saved to `data/cleaned`.
-
----
-
-##  Dashboard & Analysis
-The cleaned dataset is used to build an interactive **Power BI dashboard** that includes:
-
-- Total Sales, Orders, and Average Order Value
-- Monthly Sales Trends
-- Sales by Product Category
-- Sales by Region and Channel
-- Customer Segment Performance
-- Top Products by Revenue
-
-The dashboard is designed for **executive and operational reporting**, with filters and drill‑downs for deeper analysis.
+Raw data is stored in `data/raw`, and the final cleaned dataset is stored in `data/cleaned`.
 
 ---
 
-##  Key Insights
-- A small number of categories contribute the majority of revenue
+## 📈 Dashboard Development (Power BI)
+The cleaned dataset is used to develop a Power BI dashboard featuring:
+
+- Total Sales, Total Orders, and Average Order Value (AOV)
+- Monthly and yearly sales trends
+- Sales by product category and region
+- Sales channel comparison (Online, In‑Store, Mobile App)
+- Customer segment performance
+- Top products by revenue
+
+The dashboard is designed for **business users and decision‑makers**, with interactive filters and clear KPI indicators.
+
+---
+
+## 💡 Key Insights (Examples)
+- A small number of categories contribute a large share of total revenue
 - VIP and Loyal customers generate higher average order values
-- Sales channel performance varies by region
-- Discounting increases sales volume but impacts profitability
-- Sales trends show clear seasonal and regional patterns
+- Online sales outperform in‑store sales in several regions
+- Sales performance varies significantly by month and region
 
 ---
 
-## Tools & Technologies
+## 🛠 Tools & Technologies
 - **Python (Pandas)** – data cleaning and preparation
-- **Power BI** – data modeling and dashboard development
-- **Jupyter Notebook** – documenting the cleaning process
+- **Jupyter Notebook** – documentation of the cleaning process
+- **Power BI** – data modeling and dashboard creation
 
 ---
+
 
 ## 📂 Project Structure
 
@@ -106,6 +102,15 @@ retail-sales-powerbi-dashboard/
 └── README.md
 
 
+---
+
+---
+
+## ✅ Project Status
+- ✔ Raw data added and preserved
+- ✔ Data cleaning completed and documented
+- ✔ Cleaned dataset prepared for Power BI
+- ⏳ Power BI dashboard under development
 ---
 
 ## ✅ Outcome
